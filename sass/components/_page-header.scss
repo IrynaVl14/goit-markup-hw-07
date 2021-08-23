@@ -1,0 +1,21 @@
+.page-header {
+  border-bottom: 1px solid $secondary-border-color;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__nav,
+.site-nav.list,
+.contacts.list {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
