@@ -9,17 +9,6 @@
   align-items: center;
 }
 
-.footer__logo--inverse {
-  color: $white-text-color;
-
-  transition: color 250ms $primary-timing-function;
-
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
-}
-
 .footer__logo {
   margin-bottom: 20px;
 }
@@ -29,7 +18,9 @@
 }
 
 .address__link {
+  margin-right: 70px;
   font-style: normal;
+  line-height: 1.71;
   color: $contacts-footer-color;
 
   transition: color 250ms $primary-timing-function;
@@ -38,19 +29,9 @@
   &:focus {
     color: $accent-color;
   }
-}
 
-.address__link--color_white {
-  font-style: normal;
-  line-height: 1.71;
-  color: $white-text-color;
-  margin-right: 70px;
-
-  transition: color 250ms $primary-timing-function;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  &--color-white {
+    color: $white-text-color;
   }
 }
 

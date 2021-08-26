@@ -7,14 +7,11 @@
   line-height: 1.19;
   text-decoration: none;
 
-  transition: color 250ms $primary-timing-function;
-
-  &:focus,
-  &:hover {
+  &--color-blue {
     color: $accent-color;
   }
-}
 
-.logo--color_blue {
-  color: $accent-color;
+  &--inverse {
+    color: $white-text-color;
+  }
 }

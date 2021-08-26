@@ -1,7 +1,11 @@
-@import "../sass/base/normalize";
+//Utils
 @import "../sass/utils/variables";
-@import "../sass/utils/global-styles";
-@import "../sass/components/container";
+
+//Base
+@import "../sass/base/normalize";
+@import "../sass/base/global-styles";
+
+//Components
 @import "../sass/components/buttons";
 @import "../sass/components/page-header";
 @import "../sass/components/logo";
@@ -19,3 +23,4 @@
 @import "../sass/components/footer";
 @import "../sass/components/backdrop";
 @import "../sass/components/modal";
+@import "../sass/components/form";
