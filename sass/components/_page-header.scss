@@ -2,16 +2,12 @@
   border-bottom: 1px solid $secondary-border-color;
 }
 
-.page-header .container {
-  display: flex;
-  align-items: center;
+.page-header__container {
+  @include flex(null, center);
 }
 
-.page-header__nav,
-.site-nav.list,
-.contacts.list {
-  display: flex;
-  align-items: center;
+.page-header__nav {
+  @include flex(null, center);
 }
 
 .page-header__logo {

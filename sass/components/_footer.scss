@@ -4,12 +4,17 @@
   padding-bottom: 60px;
 }
 
-.footer .container {
-  display: flex;
-  align-items: center;
+.footer__container {
+  @include flex(null, center);
 }
 
 .footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  @extend %title--text;
+  color: $white-text-color;
   margin-bottom: 20px;
 }
 
@@ -23,7 +28,7 @@
   line-height: 1.71;
   color: $contacts-footer-color;
 
-  transition: color 250ms $primary-timing-function;
+  @include transition(color);
 
   &:hover,
   &:focus {
@@ -35,38 +40,22 @@
   }
 }
 
-.social__invitement,
-.subscribe__text {
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1, 14;
-  color: $white-text-color;
-  margin-bottom: 20px;
-}
-
 .subscribe {
   margin-left: auto;
 }
 
 .subscribe__form {
-  display: flex;
+  @include flex(null, null);
 }
 
-.send-icon {
-  margin-left: 10px;
-}
-
-.footer__nav {
-  display: inline-block;
-}
-
-.footer__nav input {
+.subscribe__input {
   margin-right: 12px;
   width: 358px;
   padding: 16px 15px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+
+  @include border(rgba(255, 255, 255, 0.3));
+
   outline: none;
 
   color: $white-text-color;
@@ -78,4 +67,8 @@
     font-size: 16px;
     font-family: inherit;
   }
+}
+
+.subscribe__send-icon {
+  margin-left: 10px;
 }

@@ -1,7 +1,5 @@
 .social__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
   width: 206px;
 }
 
@@ -10,15 +8,14 @@
 }
 
 .social__link {
-  display: flex;
-  align-items: center;
+  @include flex(null, center);
   width: 44px;
   height: 44px;
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color 250ms $primary-timing-function;
+  @include transition(background-color);
 
   &:hover,
   &:focus {

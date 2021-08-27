@@ -1,3 +1,7 @@
+.site-nav {
+  @include flex(null, center);
+}
+
 .site-nav__link {
   display: block;
   padding-top: 32px;
@@ -9,19 +13,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color 250ms $primary-timing-function;
+  @include transition(color);
 
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-}
-
-.site-nav__item {
-  position: relative;
-
-  &:not(:last-child) {
-    margin-right: 50px;
   }
 }
 
@@ -38,5 +34,13 @@
     height: 4px;
     border-radius: 2px;
     background-color: $accent-color;
+  }
+}
+
+.site-nav__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
   }
 }

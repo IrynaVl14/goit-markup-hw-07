@@ -1,20 +1,17 @@
 .clients__list {
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between, null);
 }
 
 .clients__logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex(space-between, center);
 
   fill: $company-logo-color;
   padding: 16px 32px;
-  border: 1px solid $company-logo-color;
-  border-radius: 4px;
 
-  transition: border-color 250ms $primary-timing-function,
-    fill 250ms $primary-timing-function;
+  @include border($company-logo-color);
+
+  @include transition(border-color);
+  @include transition(fill);
 
   &:hover,
   &:focus {

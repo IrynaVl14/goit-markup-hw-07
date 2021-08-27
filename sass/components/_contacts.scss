@@ -1,6 +1,10 @@
+.contacts__list {
+  @include flex(null, center);
+  margin-left: auto;
+}
+
 .contacts__link {
-  display: flex;
-  align-items: center;
+  @include flex(null, center);
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -11,8 +15,8 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color 250ms $primary-timing-function,
-    fill 250ms $primary-timing-function;
+  @include transition(color);
+  @include transition(fill);
 
   &:hover,
   &:focus {
@@ -21,12 +25,8 @@
   }
 }
 
-.contacts.list {
-  margin-left: auto;
-}
-
 .contacts__item {
-  display: flex;
+  @include flex(null, null);
   margin-right: 50px;
 
   &:last-child {
@@ -38,7 +38,7 @@
 /* .contacts .contacts__item:not(:last-child){
   margin-right: 50px; */
 
-.mail-icon,
-.phone-icon {
+.contacts__mail-icon,
+.contacts__phone-icon {
   margin-right: 10px;
 }
