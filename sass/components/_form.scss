@@ -3,7 +3,7 @@
 }
 
 .form-field__label {
-  @include flex(null, null);
+  @include flex;
   width: 100%;
   flex-direction: column;
 
@@ -88,7 +88,7 @@
 }
 
 .form-field__checkbox-form {
-  @include flex(center, null);
+  @include flex($jc:center);
 
   margin-top: 20px;
   margin-bottom: 30px;
@@ -104,7 +104,7 @@
 }
 
 .form-field__checkbox-label {
-  @include flex(null, center);
+  @include flex($ai:center);
 
   cursor: pointer;
 

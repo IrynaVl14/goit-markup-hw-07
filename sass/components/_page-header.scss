@@ -3,11 +3,11 @@
 }
 
 .page-header__container {
-  @include flex(null, center);
+  @include flex($ai:center);
 }
 
 .page-header__nav {
-  @include flex(null, center);
+  @include flex($ai:center);
 }
 
 .page-header__logo {

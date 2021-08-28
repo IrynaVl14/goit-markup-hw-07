@@ -1,10 +1,10 @@
 .contacts__list {
-  @include flex(null, center);
+  @include flex($ai:center);
   margin-left: auto;
 }
 
 .contacts__link {
-  @include flex(null, center);
+  @include flex($ai:center);
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -26,7 +26,7 @@
 }
 
 .contacts__item {
-  @include flex(null, null);
+  @include flex;
   margin-right: 50px;
 
   &:last-child {

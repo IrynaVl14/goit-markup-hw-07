@@ -1,7 +1,11 @@
-@mixin flex($jc, $ai) {
+@mixin flex($jc: false, $ai: false) {
   display: flex;
-  justify-content: $jc;
-  align-items: $ai;
+  @if ($jc) {
+    justify-content: $jc;
+  }
+  @if ($ai) {
+    align-items: $ai;
+  }
 }
 
 @mixin transition($property) {

@@ -3,7 +3,7 @@
 }
 
 .team__list {
-  @include flex(space-between, null);
+  @include flex($jc:space-between);
 }
 
 .team-member {
@@ -36,7 +36,7 @@
 }
 
 .team-member__social-icon {
-  @include flex(null, center);
+  @include flex($ai:center);
   padding: 12px;
   fill: $company-logo-color;
   border-radius: 50%;

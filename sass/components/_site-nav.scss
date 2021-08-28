@@ -1,5 +1,5 @@
 .site-nav {
-  @include flex(null, center);
+  @include flex($ai: center);
 }
 
 .site-nav__link {

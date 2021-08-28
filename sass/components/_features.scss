@@ -1,5 +1,5 @@
 .feature-list {
-  @include flex(space-between, null);
+  @include flex($jc: space-between);
 }
 
 .feature-list__item {
@@ -7,7 +7,7 @@
 }
 
 .feature-list__icon {
-  @include flex(null, center);
+  @include flex($ai: center);
   margin-bottom: 30px;
   padding: 25px 100px;
   border-radius: 4px;

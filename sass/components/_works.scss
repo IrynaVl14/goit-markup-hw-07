@@ -3,7 +3,7 @@
 }
 
 .work-list {
-  @include flex(space-between, null);
+  @include flex($jc:space-between);
 }
 
 .work-list__item {
@@ -21,7 +21,7 @@
 }
 
 .work-list__paragraph {
-  @include flex(center, center);
+  @include flex($jc: center, $ai: center);
 
   min-height: 70px;
 

@@ -1,10 +1,10 @@
 .primary-button {
-  @include flex(center, center);
+  @include flex($jc: center, $ai: center);
 
   min-width: 200px;
 
   @include border(transparent);
-  
+
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +35,7 @@
   display: inline-block;
 
   @include border(transparent);
-  
+
   padding: 6px 22px;
 
   color: $title-text-color;

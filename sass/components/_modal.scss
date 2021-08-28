@@ -28,7 +28,7 @@
 
 .modal__close {
   position: absolute;
-  @include flex(center, center);
+  @include flex($jc: center, $ai:center);
   top: 8px;
   right: 8px;
   cursor: pointer;
