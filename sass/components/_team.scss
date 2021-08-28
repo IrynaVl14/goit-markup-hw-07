@@ -41,8 +41,7 @@
   fill: $company-logo-color;
   border-radius: 50%;
 
-  @include transition(fill);
-  @include transition(background-color);
+  @include transition(fill,background-color);
 
   &:hover,
   &:focus {

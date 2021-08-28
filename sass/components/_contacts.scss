@@ -1,12 +1,10 @@
 .contacts__list {
-  @include flex($ai:center);
+  @include flex($ai: center);
   margin-left: auto;
 }
 
 .contacts__link {
-  @include flex($ai:center);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include flex($ai: center);
 
   color: $primary-text-color;
   fill: $primary-text-color;
@@ -15,8 +13,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  @include transition(color);
-  @include transition(fill);
+  @include transition(color, fill);
 
   &:hover,
   &:focus {

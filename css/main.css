@@ -87,8 +87,10 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .primary-button:hover, .primary-button:focus {
@@ -113,14 +115,12 @@ a {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
 }
 
 .secondary-button:hover, .secondary-button:focus {
@@ -193,8 +193,10 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .site-nav__link:hover, .site-nav__link:focus {
@@ -241,17 +243,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   fill: #757575;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
 }
 
 .contacts__link:hover, .contacts__link:focus {
@@ -442,10 +442,10 @@ a {
   padding: 12px;
   fill: #afb1b8;
   border-radius: 50%;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: fill, background-color;
+  transition-property: fill, background-color;
 }
 
 .team-member__social-icon:hover, .team-member__social-icon:focus {
@@ -482,8 +482,10 @@ a {
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .social__link:hover, .social__link:focus {
@@ -513,10 +515,10 @@ a {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
 }
 
 .clients__logo:hover, .clients__logo:focus {
@@ -578,12 +580,12 @@ a {
 
 .portfolio__link {
   display: inline-block;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
 }
 
 .portfolio__link:hover {
@@ -612,10 +614,12 @@ a {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .portfolio__description {
@@ -664,8 +668,10 @@ a {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .address__link:hover, .address__link:focus {
@@ -735,8 +741,10 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .backdrop.is-hidden {
@@ -756,10 +764,12 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
   width: 528px;
   height: 581px;
   padding: 40px;
@@ -798,8 +808,10 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: #000000;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 .modal__close:hover {
@@ -841,8 +853,10 @@ a {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: border;
+  transition-property: border;
 }
 
 .form-field__input:hover, .form-field__input:focus {
@@ -859,8 +873,10 @@ a {
   -webkit-transform: translate(12px, 29px);
           transform: translate(12px, 29px);
   fill: #212121;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 .form-field__textarea {
@@ -878,8 +894,10 @@ a {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition-property: border;
+  transition-property: border;
 }
 
 .form-field__textarea:hover, .form-field__textarea:focus {

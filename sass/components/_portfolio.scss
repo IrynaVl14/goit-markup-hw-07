@@ -37,8 +37,7 @@
 .portfolio__link {
   display: inline-block;
 
-  @include transition(background-color);
-  @include transition(box-shadow);
+  @include transition(background-color,box-shadow);
 
   &:hover {
     background-color: $white-text-color;
