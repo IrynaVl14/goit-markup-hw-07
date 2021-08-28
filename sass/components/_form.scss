@@ -3,7 +3,7 @@
 }
 
 .form-field__label {
-  @include flex;
+  @include flex();
   width: 100%;
   flex-direction: column;
 

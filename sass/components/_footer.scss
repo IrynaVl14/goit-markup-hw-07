@@ -45,7 +45,7 @@
 }
 
 .subscribe__form {
-  @include flex;
+  @include flex();
 }
 
 .subscribe__input {

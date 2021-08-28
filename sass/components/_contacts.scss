@@ -23,7 +23,7 @@
 }
 
 .contacts__item {
-  @include flex;
+  @include flex();
   margin-right: 50px;
 
   &:last-child {
